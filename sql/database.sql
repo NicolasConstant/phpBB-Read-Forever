@@ -12,13 +12,3 @@ CREATE TABLE RF_ReadForeverListData (
 	topicname VARCHAR(255),
 	FOREIGN KEY (userid) REFERENCES RF_ReadForeverUser(id)
 );
-
-INSERT INTO RF_ReadForeverUser (username, apikey) VALUES ('Dross', 'A1Z2e3r4t5');
-INSERT INTO RF_ReadForeverUser (username, apikey) VALUES ('Bob', '123456');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (1, 'Mon premier topic');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (1, 'Mon deuxième topic');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (1, 'Mon troisième topic');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (2, 'Mon troisième topic');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (2, 'Mon topic');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (2, 'Mon topic 2');
-INSERT INTO RF_ReadForeverListData (userid, topicname) VALUES (2, 'Mon topic 3');
