@@ -12,7 +12,7 @@ namespace ReadForeverTests
     public class RfApiTests
     {
         private const string ConnectionString = "SERVER=127.0.0.1; DATABASE=read_forever; UID=root; PASSWORD=";
-        private const string EndpointAdress = "http://localhost/api-nofrag/";
+        private const string EndpointAdress = "http://localhost/api/";
         private const string UserEndpoint = EndpointAdress + "rf-authentication.php";
         private const string ListEndpoint = EndpointAdress + "rf-blacklist.php";
         
