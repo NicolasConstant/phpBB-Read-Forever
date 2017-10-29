@@ -2,11 +2,13 @@
 
 function displayError($errorCode, $errorMessage){
 	header('HTTP/1.1 '.$errorCode.' '.$errorMessage );
+	die(json_encode(array('message' => $errorMessage)));
 }
 
 function displaySuccessResult($jsondata){
 	header('Content-type: application/json');
 	header('Access-Control-Allow-Origin: *');
+	header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 	echo $jsondata;
 }
 
